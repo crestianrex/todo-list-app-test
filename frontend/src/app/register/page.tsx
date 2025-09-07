@@ -18,13 +18,10 @@ export default function RegisterPage() {
     setSuccess("");
 
     try {
-      const response = await axios.post(
-        `${process.env.NEXT_PUBLIC_API_BASE_URL}api/register/`,
-        {
-          username,
-          password,
-        }
-      );
+      await axios.post("http://localhost:8000/api/register/", {
+        username,
+        password,
+      });
       setSuccess("Account created successfully! You can now log in.");
       setTimeout(() => {
         router.push("/login");
