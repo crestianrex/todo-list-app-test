@@ -1,0 +1,23 @@
+# Python virtual environment
+venv/
+
+# Node.js dependencies
+node_modules/
+
+# Environment files
+.env
+.env.local
+.env.production
+.env.development
+
+# Pycache
+__pycache__/
+
+# Django-specific files
+db.sqlite3
+*.pyc
+/backend/.vscode/
+
+# Next.js build and cache
+.next/
+out/
